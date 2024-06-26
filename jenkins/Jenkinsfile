@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                git url:'https://github.com/sarahjonna/simple-java-maven-app.git'
+                git credentialId:'1234' ,url:'https://github.com/sarahjonna/simple-java-maven-app.git'
             }
         }
         stage('build') {
